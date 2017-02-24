@@ -41,6 +41,7 @@ deployment:
     branch: build_speed
     commands:
       - ./scripts/build/deploy.sh
+      - sudo chown -R ubuntu:ubuntu dist
       - ./scripts/build/sign_packages.sh
       - go run build.go sha1-dist
       #- aws s3 sync ./dist s3://$BUCKET_NAME/master

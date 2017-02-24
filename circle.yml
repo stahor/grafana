@@ -33,7 +33,8 @@ dependencies:
 
 test:
   override:
-     - bash scripts/circle-test.sh
+    - whoami
+    - bash scripts/circle-test.sh
 
 deployment:
   gh_branch:

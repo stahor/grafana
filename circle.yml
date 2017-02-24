@@ -33,7 +33,6 @@ dependencies:
 
 test:
   override:
-    - whoami
     - bash scripts/circle-test.sh
 
 deployment:

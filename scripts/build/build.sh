@@ -21,7 +21,8 @@ REPO_PATH=$GOPATH/src/github.com/grafana/grafana
 #  cd $REPO_PATH
 #fi
 
-cd $REPO_PATH
+#cd $REPO_PATH
+cd /go/src/github.com/grafana/grafana
 echo "current dir: $(pwd)"
 
 if [ "$CIRCLE_TAG" != "" ]; then
@@ -49,6 +50,6 @@ else
   go run build.go -buildNumber=${CIRCLE_BUILD_NUM} package latest
 fi
 
-cp dist/* /tmp/dist/
+#cp dist/* /tmp/dist/
 
 

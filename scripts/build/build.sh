@@ -22,7 +22,7 @@ REPO_PATH=$GOPATH/src/github.com/grafana/grafana
 #fi
 
 echo "current dir: $(pwd)"
-
+cd $REPO_PATH
 if [ "$CIRCLE_TAG" != "" ]; then
   echo "Building a release from tag $CIRCLE_TAG"
   go run build.go -buildNumber=${CIRCLE_BUILD_NUM} -includeBuildNumber=false build

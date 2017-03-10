@@ -17,8 +17,8 @@ div.flot-text {
 
   &--solo {
     .panel-container {
-      border: none;
       z-index: $zindex-sidemenu + 1;
+      border: 1px solid #CCCCCC;
     }
   }
 }

@@ -399,9 +399,9 @@ describe('grafanaGraph', function() {
           scope.range.to = moment([2015, 11, 20]);
         });
 
-        it('should format dates as month days', function() {
+        it('should format dates as days moth', function() {
           var axis = ctx.plotOptions.xaxis;
-          expect(axis.timeformat).to.be('%m/%d');
+          expect(axis.timeformat).to.be('%d/%m');
         });
       });
     },

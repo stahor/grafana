@@ -79,7 +79,7 @@ transformers['timeseries_aggregations'] = {
   },
   transform: function(data, panel, model) {
     var i, y;
-    model.columns.push({ text: 'Metric' });
+    model.columns.push({ text: 'Name' });
 
     for (i = 0; i < panel.columns.length; i++) {
       model.columns.push({ text: panel.columns[i].text });

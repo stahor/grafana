@@ -23,6 +23,7 @@ export class TableRenderer {
     for (let colIndex = 0; colIndex < this.table.columns.length; colIndex++) {
       let column = this.table.columns[colIndex];
       column.title = column.text;
+      column.headerStyle = this.panel.headerStyle;
 
       for (let i = 0; i < this.panel.styles.length; i++) {
         let style = this.panel.styles[i];

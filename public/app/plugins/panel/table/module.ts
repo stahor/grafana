@@ -19,6 +19,9 @@ class TablePanelCtrl extends MetricsPanelCtrl {
     transform: 'timeseries_to_columns',
     pageSize: null,
     showHeader: true,
+    headerStyle: {
+      color: '#99aaff',
+    },
     styles: [
       {
         type: 'date',

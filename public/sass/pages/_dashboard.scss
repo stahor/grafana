@@ -16,6 +16,8 @@ div.flot-text {
   height: 100%;
 
   &--solo {
+    margin-bottom: 0;
+
     .panel-container {
       z-index: $zindex-sidemenu + 1;
       border: solid 1px #ccc;
